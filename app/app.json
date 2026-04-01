@@ -1,0 +1,26 @@
+{
+    "admininfo":{
+            "username":"Samarth",
+            "password":"DevAcrobat"
+    },
+    "token_details":{
+            "secret_key":"advancingAI",
+            "sample_code":"HS256",
+            "expiry_time":15
+    },
+    "Databases":{
+        "Appdb":{
+            "collections":{
+                "usersdata":"UserCollection",
+                "sheetsdata":"SheetsCollection",
+                "sessiondata":"SessionCollection",
+                "sipuserdata":"SIPUserCollection",
+                "sipcalldata":"CallsCollection"
+            }
+        },
+        "Modeldb":{
+            "collections":[]
+        }
+    }
+
+}
