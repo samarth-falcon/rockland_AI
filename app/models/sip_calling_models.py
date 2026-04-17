@@ -1,14 +1,18 @@
-
 from pydantic import BaseModel
 import uuid
 
 class UserCalling(BaseModel):
-    call_id:uuid.UUID
-    username: str
-    phone_number:int
-    requested_phone_number:int
-    role: str
+    customer_name: str
+    call_type: str
+    caller_name: str
+    call_date: str
+    customer_number: str
+    call_sid: str
+    
     
 class CheckCallStatus(BaseModel):
     call_status:str
     call_sid:str    
+
+class CallRecording(BaseModel):
+    call_sid: str    
